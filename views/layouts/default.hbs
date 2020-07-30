@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Team Cloud Byte's Website</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+  <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="https://innovationatwork.ieee.org/wp-content/uploads/2019/09/bigstock-d-Rendering-Cloud-Computing-267217441_1024X684.jpg" style="max-height:50px;max-width:50px" class="img-fluid" alt="Responsive image">
+  <a class="navbar-brand" style="color: blue">Cloud Byte: Daily Dose of Cloud</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:600px">
+    <form class="form-inline my-2 my-md-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search the Cloud" aria-label="Search">
+      {{!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> --}}
+    </form>
+  </div>
+</nav>
+<div class="card" style="width: 25rem;height:25rem;margin-left:440px;margin-top:40px;color:blue">
+  <div class="card-body">
+        {{{body}}}
+  </div>
+</div>
+{{!-- <div class="container"style="margin-left:440px;margin-top:40px"> --}}
+{{!-- </div> --}}
+</div>
+<div>
+  <h2 style="margin-left:500px;margin-top:20px">Add an event</h2>
+  {{!-- <form>
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form> --}}
+  <form style="margin-left:"action="/event" method="post">
+  <div class="container"style="margin-left:480px">
+     <input name="title" type="text" /><br/>
+ <input name="description"type="text" /> <br />
+       <br />
+        <input class="btn btn-primary" style="margin-left:50px"type="submit" name="submit" value="submit" /> 
+    {{!-- <form action="/event" method="post">
+       title: <input name="title" type="text" /> <br />
+       description: <input name="description" type="text" /> <br />
+       <br />
+        <input type="submit" name="submit" value="submit" /> --}}
+    </form>
+  </div>
+</body>
+</html>
